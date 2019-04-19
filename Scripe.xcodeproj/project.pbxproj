@@ -12,6 +12,8 @@
 		7CE7441322123A950087624C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE7441122123A950087624C /* Main.storyboard */; };
 		7CE7441522123A970087624C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE7441422123A970087624C /* Assets.xcassets */; };
 		7CE7441822123A970087624C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE7441622123A970087624C /* LaunchScreen.storyboard */; };
+		7CE74423221250340087624C /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE74422221250340087624C /* CircleButton.swift */; };
+		7CE74426221269F20087624C /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7CE74425221269F20087624C /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7CE7441422123A970087624C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CE7441722123A970087624C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CE7441922123A970087624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE74422221250340087624C /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		7CE74425221269F20087624C /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		7CE7440C22123A950087624C /* Scripe */ = {
 			isa = PBXGroup;
 			children = (
-				7CE7440D22123A950087624C /* AppDelegate.swift */,
-				7CE7440F22123A950087624C /* ViewController.swift */,
-				7CE7441122123A950087624C /* Main.storyboard */,
+				7CE74424221269E10087624C /* Resources */,
+				7CE7442122124FE30087624C /* Model */,
+				7CE7442022124FD90087624C /* View */,
+				7CE7441F22124FC60087624C /* Controller */,
 				7CE7441422123A970087624C /* Assets.xcassets */,
-				7CE7441622123A970087624C /* LaunchScreen.storyboard */,
 				7CE7441922123A970087624C /* Info.plist */,
 			);
 			path = Scripe;
+			sourceTree = "<group>";
+		};
+		7CE7441F22124FC60087624C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CE7440D22123A950087624C /* AppDelegate.swift */,
+				7CE7440F22123A950087624C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7CE7442022124FD90087624C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CE7441122123A950087624C /* Main.storyboard */,
+				7CE74422221250340087624C /* CircleButton.swift */,
+				7CE7441622123A970087624C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CE7442122124FE30087624C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CE74424221269E10087624C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CE74425221269F20087624C /* test.m4a */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +134,7 @@
 				TargetAttributes = {
 					7CE7440922123A950087624C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -122,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE74426221269F20087624C /* test.m4a in Resources */,
 				7CE7441822123A970087624C /* LaunchScreen.storyboard in Resources */,
 				7CE7441522123A970087624C /* Assets.xcassets in Resources */,
 				7CE7441322123A950087624C /* Main.storyboard in Resources */,
@@ -135,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE74423221250340087624C /* CircleButton.swift in Sources */,
 				7CE7441022123A950087624C /* ViewController.swift in Sources */,
 				7CE7440E22123A950087624C /* AppDelegate.swift in Sources */,
 			);
@@ -290,7 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.Scripe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khaled.Scripe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
